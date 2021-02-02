@@ -21,4 +21,5 @@ class SumNumbers(BaseModel):
 
 @app.post("/api/v1/operations/sum_numbers")
 def sum_numbers(post_request_data: SumNumbers):
+    print("Entered sum_numbers")
     return JSONResponse(status_code=200, content=sum_two_numbers(SumNumbers.first_number, SumNumbers.second_number))
