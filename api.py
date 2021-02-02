@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from starlette.responses import JSONResponse
 from add_two_numbers import sum_two_numbers
+import uvicorn
 
 title="REST API methods for performing addition of two numbers"
 version="1.0"
