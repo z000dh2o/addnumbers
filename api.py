@@ -2,18 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 from starlette.responses import JSONResponse
 from add_two_numbers import sum_two_numbers
-import uvicorn
 
 title="REST API methods for performing addition of two numbers"
 version="1.0"
 description="Interface Specification for adding two numbers"
 
 app = FastAPI(title=title,description=description,version=version)
-
-if __name__ == "__main__":
-	uvicorn.run(app,
-					host="0.0.0.0",
-					port=8080)
 
 class SumNumbers(BaseModel):
     first_number: int = Field(None)
