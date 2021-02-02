@@ -1,0 +1,12 @@
+fastapi==0.60.1
+h11==0.9.0
+httptools==0.1.1
+joblib==0.16.0
+pydantic==1.6.1
+requests==2.24.0
+six==1.15.0
+starlette==0.13.6
+threadpoolctl==2.1.0
+uvicorn==0.11.8
+uvloop==0.14.0
+websockets==8.1
